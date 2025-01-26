@@ -1,6 +1,5 @@
 - name: Windows Firewall
   hosts: win
-  become: true
   - name: Enable firewall for Private profiles
     win_firewall:
       state: enabled
