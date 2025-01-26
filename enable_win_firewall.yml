@@ -4,5 +4,5 @@
     - ansible.windows
   tasks:
     - name: Run a module not specifying FQCN
-      my_module: win_firewall
-        state: enabled    
+      my_module: 
+        option1: win_firewall   
