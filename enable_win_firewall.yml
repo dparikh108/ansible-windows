@@ -1,6 +1,6 @@
-- name: Enable firewall for Private profiles
-  win_firewall:
-    state: enabled
-    profiles:
-    - Private
-  tags: enable_firewall
+- name: Ansible-windows collection content using its FQCN
+  hosts: win
+  tasks:
+    - name: Call a win_firewall using FQCN
+      ansible.windows.win_firewall:
+        option1: enabled
