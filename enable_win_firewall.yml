@@ -1,6 +1,7 @@
-- name: Ansible-windows collection content using its FQCN
+collections:
+- name: ansible.windows
   hosts: win
   tasks:
     - name: Call a win_firewall using FQCN
-      community.windows.win_firewall:
+      ansible.windows.win_firewall:
         option1: enabled
