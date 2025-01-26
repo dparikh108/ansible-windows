@@ -1,7 +1,8 @@
-collections:
-- name: ansible.windows
+- name: Run a play using the collections keyword
   hosts: win
+  collections:
+    - ansible.windows
   tasks:
-    - name: Call a win_firewall using FQCN
-      ansible.windows.win_firewall:
-        option1: enabled
+    - name: Run a module not specifying FQCN
+      my_module: win_firewall
+        state: enabled    
