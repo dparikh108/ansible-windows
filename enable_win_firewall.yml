@@ -1,8 +1,6 @@
-- name: Windows Firewall
-  hosts: win
-  - name: Enable firewall for Private profiles
-    win_firewall:
-      state: enabled
-      profiles:
-      - Private
-    tags: enable_firewall
+- name: Enable firewall for Private profiles
+  win_firewall:
+    state: enabled
+    profiles:
+    - Private
+  tags: enable_firewall
