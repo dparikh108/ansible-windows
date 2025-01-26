@@ -2,5 +2,5 @@
   hosts: win
   tasks:
     - name: Call a win_firewall using FQCN
-      ansible.windows.win_firewall:
+      community.windows.win_firewall:
         option1: enabled
