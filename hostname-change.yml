@@ -1,5 +1,5 @@
 - name: Hostname Change
-  hosts: windows
+  hosts: 172.20.36.201
   remote_user: Administrator
   gather_facts: True
   tasks:
