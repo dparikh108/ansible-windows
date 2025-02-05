@@ -1,5 +1,5 @@
 - name: Run a play using the collections keyword
-  hosts: win
+  hosts: windows
   collections:
     - ansible.windows
   tasks:
