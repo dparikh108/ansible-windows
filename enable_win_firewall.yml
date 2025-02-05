@@ -1,12 +1,12 @@
 - name: Run a play using the collections keyword
-  hosts: windows
+  hosts: Windows
   remote_user: Administrator
-  gather_facts: True
-  
+  gather_facts: False
   tasks:
   - name: Enable firewall for Domain, Public and Private profiles
     community.windows.win_firewall:
       state: enabled
       profiles:
         - Public
+        - Private
     tags: enable_firewall
