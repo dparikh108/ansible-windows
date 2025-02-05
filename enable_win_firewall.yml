@@ -1,8 +1,9 @@
 - name: Run a play using the collections keyword
   hosts: windows
-  collections:
-    - ansible.windows
   tasks:
-  - name: Run a module not specifying FQCN
-    win_firewall: 
-      status: enable
+  - name: Enable firewall for Domain, Public and Private profiles
+    ansible.windows.win_firewall:
+      state: enabled
+      profiles:
+        - Public
+    tags: enable_firewall
