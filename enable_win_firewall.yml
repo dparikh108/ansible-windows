@@ -3,6 +3,6 @@
   collections:
     - ansible.windows
   tasks:
-    - name: Run a module not specifying FQCN
-      win_firewall: 
-        status: enable
+  - name: Run a module not specifying FQCN
+    win_firewall: 
+      status: enable
